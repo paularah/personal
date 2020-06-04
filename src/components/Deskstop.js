@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import HomepageHeading from './Heading'
 
@@ -7,8 +6,7 @@ import {
     Menu,
     Segment,
     Responsive,
-    Visibility, 
-    Button
+    Visibility
 
 
 } from 'semantic-ui-react'

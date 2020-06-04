@@ -6,7 +6,6 @@ import {
   Grid,
   Header,
   Image,
-  List,
   Segment
 } from 'semantic-ui-react'
 import ResponsiveContainer from './Responsive';
@@ -76,7 +75,6 @@ const HomepageLayout = () => (
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
-       
       </Container>
     </Segment>
   </ResponsiveContainer>
