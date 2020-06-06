@@ -1,12 +1,12 @@
 import React from 'react'
 import {
-  Button,
   Container,
   Divider,
   Grid,
-  Header,
   Image,
-  Segment
+  Segment,
+  Header,
+  Icon
 } from 'semantic-ui-react'
 import ResponsiveContainer from './Responsive';
 
@@ -14,67 +14,79 @@ import ResponsiveContainer from './Responsive';
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+
+<Segment style={{ padding: '5em 0em' }} vertical>
+      <Grid container stackable verticalAlign='middle'>
+          <Grid.Column width={8}>
+           <Container text>
+           
+           <p style={{ fontSize: '1.33em' }}>
+              I am a software developer 
             </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-
-        <Divider
+            <Divider
           as='h4'
           className='header'
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href='#'>Case Studies</a>
+          <a href='/'>Skills</a>
         </Divider>
-
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
+            <p style={{ fontSize: '1.33em' }}>
+              I am primarily focused on the backend stack. I am skilled with Node.js, Typescript, JavaScript, MongoDB, PostgreSQL, Redis, Docker, Nginx and AWS.
+              I have a working knowlegde of basic Dev-Ops principles and tools needed to navigate the backend both as a sole developer and in a team.  
+            </p>
+           </Container>
+          </Grid.Column>
+          <Grid.Column floated='right' width={4}>
+          <Image src='/arah.jpg' size='medium' circular disabled/>
+          </Grid.Column>
+      </Grid>
+    </Segment>
+    <Segment style={{ padding: '7em 0em' }} vertical>
+      <Container text>
         <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
+          Arah is a software developer 
         </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
       </Container>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
-      <Container>
+    <Segment inverted vertical style={{ minHeight: 300, padding: '1em 0em' }}>
+      <Container text  style={{
+                    fontWeight: 'normal',
+                    marginBottom: 0,
+                    marginTop:'3em',
+                }}>
+        <Header as='h2' inverted textAlign="center" >
+          Get in touch
+        </Header>
+      </Container>
+      <Container style={{
+                    fontWeight: 'bold',
+                    marginBottom: 0,
+                    marginTop:'1.5em',
+                }}>
+      <Grid divided inverted stackable verticalAlign='middle'>
+          <Grid.Row>
+            <Grid.Column width={5} size='massive'>
+              <Container text>
+              <Icon name='phone'/>
+              <a href='tel:555-555-5555' target="_blank" rel="noopener noreferrer">+250787691717</a>
+              </Container>
+            </Grid.Column>
+            <Grid.Column width={5}>
+            <Container text>
+              <Icon name='envelope outline'/>
+              <a href='mailto:albarnorth03@gmail.com' target="_blank" rel="noopener noreferrer">albarnorth03@gmail.com</a>
+              </Container>
+            </Grid.Column>
+            <Grid.Column width={5}>
+            <Container text>
+              <Icon name='github'/>
+              <a href='https://github.com/paularah' target="_blank" rel="noopener noreferrer">Paul Arah</a>
+              </Container>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Container>
     </Segment>
   </ResponsiveContainer>
