@@ -4,7 +4,9 @@ import {
     Header,
     Button, 
     Icon
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
+
+import {Link} from 'react-router-dom'
 
 
 const HomepageHeading = ({ mobile }) => (
@@ -30,14 +32,18 @@ const HomepageHeading = ({ mobile }) => (
                     marginTop: mobile ? '0.5em' : '1.0em',
                 }}
                 />
-                <Button as='a' inverted >
-                Blog
-                <Icon name='pencil alternate' style={{ marginLeft:'0.2em'}}/>
-                </Button>
-                <Button as='a' inverted style={{ marginLeft: '0.6em' }}>
-                    Github
-                    <Icon name='github' style={{ marginLeft:'0.2em'}}/>
-                </Button>
+                <Link to='/blog'>
+                    <Button as='a' inverted >
+                    Blog
+                    <Icon name='pencil alternate' style={{ marginLeft:'0.2em'}}/>
+                    </Button>
+                </Link>
+                <a href='https://github.com/paularah' target="_blank" rel="noopener noreferrer">
+                    <Button as='a' inverted style={{ marginLeft: '0.6em' }}>
+                        Github
+                        <Icon name='github' style={{ marginLeft:'0.2em'}}/>
+                    </Button>
+                </a>
                 
             </Container>
 )
