@@ -82,7 +82,7 @@ const HomepageLayout = () => {
                       marginTop:'1.5em',
                   }}>
         <Grid divided inverted stackable verticalAlign='middle'>
-            <Grid.Row>
+            <Grid.Row id={'contact'}>
               <Grid.Column width={5} size='massive'>
                 <Container text>
                 <Icon name='phone'/>

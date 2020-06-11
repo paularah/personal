@@ -9,7 +9,7 @@ import {
     Visibility
 } from 'semantic-ui-react'
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const getWidth = () => {
     const isSSR = typeof window === 'undefined'
@@ -51,12 +51,12 @@ class DesktopContainer extends Component {
                   <Menu.Item as='a' active>
                     Home
                   </Menu.Item>
-                  <Link to='/#about'>
+                  <a href='#about'>
                     <Menu.Item as='a'>About</Menu.Item>
-                  </Link>
-                  <Link>
+                  </a>
+                  <a href='#contact'>
                   <Menu.Item as='a'>Contact</Menu.Item>
-                  </Link>
+                  </a>
                 </Container>
               </Menu>
               <HomepageHeading />
