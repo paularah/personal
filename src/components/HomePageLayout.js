@@ -7,7 +7,8 @@ import {
   Segment,
   Header,
   Icon,
-  Button
+  Button,
+  Responsive
 } from 'semantic-ui-react'
 import ResponsiveContainer from './Responsive';
 
@@ -16,13 +17,21 @@ const HomepageLayout = () => {
   return (
     <ResponsiveContainer>
   
-  <Segment style={{ padding: '5em 0em' }} vertical>
+  <Segment style={{ padding: '5em 0em' }} vertical id={'about'}>
         <Grid container stackable verticalAlign='middle'>
             <Grid.Column width={8}>
              <Container text>
-             
+             <Divider
+            as='h4'
+            className='header'
+            horizontal
+            style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+          >
+            <p>About Me</p>
+          </Divider>
              <p style={{ fontSize: '1.33em' }}>
-                I am a software developer 
+             I am a software developer passionate about converting technical and business requirements into highly scalable products.
+             I employ good software development practices and methodogies to ship quality software and overall I bring positive energy around. 
               </p>
               <Divider
             as='h4'
@@ -30,22 +39,25 @@ const HomepageLayout = () => {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
           >
-            <a href='/'>Skills</a>
+            <p inverted>Skills</p>
           </Divider>
               <p style={{ fontSize: '1.33em' }}>
-                I am primarily focused on the backend stack. I am skilled with Node.js, Typescript, JavaScript, MongoDB, PostgreSQL, Redis, Docker, Nginx and AWS.
-                I have a working knowlegde of basic Dev-Ops principles and tools needed to navigate the backend both as a sole developer and in a team.  
+                I am primarily a MERN stack developer focused on the backend. I am skilled with Node.js, Typescript, JavaScript, MongoDB, PostgreSQL, Redis, Docker, Nginx and AWS. 
+                In addition to all things JavaScript, I also write Python, worked with flask and I have a working knowlegde of basic Dev-Ops principles and tools needed to navigate the backend both as a sole developer and in a team.  
               </p>
              </Container>
             </Grid.Column>
             <Grid.Column floated='right' width={4}>
+            <Responsive as={Image} minWidth={320} maxWidth={2559}>
             <Image src='/arah.jpg' size='medium' circular disabled/>
+            </Responsive>
+            
             </Grid.Column>
         </Grid>
       </Segment>
       <Segment style={{ padding: '7em 0em' }} vertical>
         <Container textAlign='center' >
-          <Button primary animated='fade'>
+          <Button primary animated='fade' width={5}>
             <Button.Content visible>HIRE   ME</Button.Content>
             <Button.Content hidden>
               <Icon name='envelope outline' />

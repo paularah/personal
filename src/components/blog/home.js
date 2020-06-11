@@ -4,7 +4,6 @@ import {
   Divider,
   Grid,
   Header,
-  Image,
   List,
   Menu,
   Segment,
@@ -23,19 +22,30 @@ const FixedMenuLayout = () => (
         </Menu.Item>
       </Container>
     </Menu>
+ 
 
+    <Segment style={{ padding: '0em' }} vertical secondary>
+      <Grid celled='internally' columns='equal' stackable>
+        <Grid.Row textAlign='center'>
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+          <Header as='h3'>I hope pen down all things software, life, experiences and sometimes random musings 
+          you should probably not take too seriously here.</Header>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Segment>
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>Semantic UI React Fixed Template</Header>
-      <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+    
+      <Header as='h4' style={{ fontSize: '1.33em' }}>
+          Remote development docker containers
         </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
+        <p style={{ fontSize: '1em' }}>
+        You're on a team consisting of several web developer (frontend and backend), UI/UX designer, 
+        dev-ops engineers, product managers and any other role I have missed. Imagine the UX designer wants to explore the product
+        and see how every thing fits together.....
         </p>
-        <Button as='a' size='large'>
-          Read More
+        <Button as='a' size='medium'>
+          Coming Soon
         </Button>
         <Divider
           as='h4'
@@ -43,82 +53,93 @@ const FixedMenuLayout = () => (
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href='/'>.</a>
+          <p>.</p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
+        </Divider>
+        <Divider
+          as='h4'
+          className='header'
+          horizontal
+          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+          <p></p>
         </Divider>
 
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
+        
 
-      <Image src='/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+     
+
     </Container>
 
     <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
       <Container textAlign='center'>
         <Grid divided inverted stackable>
-          <Grid.Column width={3}>
-            <Header inverted as='h4' content='Group 1' />
-            <List link inverted>
-              <List.Item as='a'>Link One</List.Item>
-              <List.Item as='a'>Link Two</List.Item>
-              <List.Item as='a'>Link Three</List.Item>
-              <List.Item as='a'>Link Four</List.Item>
-            </List>
-          </Grid.Column>
-          <Grid.Column width={3}>
-            <Header inverted as='h4' content='Group 2' />
-            <List link inverted>
-              <List.Item as='a'>Link One</List.Item>
-              <List.Item as='a'>Link Two</List.Item>
-              <List.Item as='a'>Link Three</List.Item>
-              <List.Item as='a'>Link Four</List.Item>
-            </List>
-          </Grid.Column>
-          <Grid.Column width={3}>
-            <Header inverted as='h4' content='Group 3' />
-            <List link inverted>
-              <List.Item as='a'>Link One</List.Item>
-              <List.Item as='a'>Link Two</List.Item>
-              <List.Item as='a'>Link Three</List.Item>
-              <List.Item as='a'>Link Four</List.Item>
-            </List>
-          </Grid.Column>
-          <Grid.Column width={7}>
-            <Header inverted as='h4' content='Footer Header' />
-            <p>
-              Extra space for a call to action inside the footer that could help re-engage users.
-            </p>
-          </Grid.Column>
         </Grid>
 
         <Divider inverted section />
-        <Image centered size='mini' src='/logo.png' />
+        <Icon name='code' size='large'></Icon>
         <List horizontal inverted divided link size='small'>
           <List.Item as='a' href='#'>
-            Site Map
+            Home
           </List.Item>
           <List.Item as='a' href='#'>
-            Contact Us
+          <Icon name='github'/>
+                <a href='https://github.com/paularah' target="_blank" rel="noopener noreferrer">Paul Arah</a>
           </List.Item>
           <List.Item as='a' href='#'>
-            Terms and Conditions
+          <Icon name='envelope outline'/>
+                <a href='mailto:albarnorth03@gmail.com' target="_blank" rel="noopener noreferrer">albarnorth03@gmail.com</a>
           </List.Item>
           <List.Item as='a' href='#'>
-            Privacy Policy
+          <Icon name='phone'/>
+                <a href='tel:555-555-5555' target="_blank" rel="noopener noreferrer">+250787691717</a>
           </List.Item>
         </List>
       </Container>
