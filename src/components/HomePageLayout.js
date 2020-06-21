@@ -57,12 +57,14 @@ const HomepageLayout = () => {
       </Segment>
       <Segment style={{ padding: '7em 0em' }} vertical>
         <Container textAlign='center' >
+          <a href='mailto:albarnorth03@gmail.com' target="_blank" rel="noopener noreferrer">
           <Button primary animated='fade' width={5}>
-            <Button.Content visible>HIRE   ME</Button.Content>
+            <Button.Content visible>HIRE  ME</Button.Content>
             <Button.Content hidden>
               <Icon name='envelope outline' />
             </Button.Content>
           </Button>
+          </a>
         </Container>
       </Segment>
   
