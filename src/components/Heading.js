@@ -1,5 +1,10 @@
-import React from "react";
-import { Container, Header, Button, Icon } from "semantic-ui-react";
+import React from 'react'
+import {
+    Container,
+    Header,
+    Button, 
+    Icon
+} from 'semantic-ui-react';
 
 const HomepageHeading = ({ mobile }) => {
   const handleBlog = () => {
