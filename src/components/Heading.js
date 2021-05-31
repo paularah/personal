@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Header, Button, Icon } from "semantic-ui-react";
 
-import { Link } from "react-router-dom";
-
 const HomepageHeading = ({ mobile }) => {
   const handleBlog = () => {
     window.location = "https://dev.to/paularah";
